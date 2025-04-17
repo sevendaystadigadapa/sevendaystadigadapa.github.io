@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bakery Menu</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fff8f0;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background-color: #a0522d;
+      color: white;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .menu {
+      margin-top: 80px;
+    }
+
+    h2 {
+      color: #8b4513;
+      margin-bottom: 1rem;
+    }
+
+    .category {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      max-width: 1000px;
+      margin: 30px auto;
+      padding: 20px;
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .category-img {
+      display: flex;
+      flex-direction: column;
+      gap: 100px;
+      justify-content: space-between;
+      margin-top: 20px;
+      /* width: 30%; */
+    }
+
+    .category img {
+      width: 150px;
+      height: auto;
+      border-radius: 10px;
+      object-fit: cover;
+    }
+
+    .item-list {
+      flex: 1;
+      /* width:50%; */
+    }
+
+    .item-list ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .item-list li {
+      padding: 6px 0;
+      border-bottom: 1px dashed #ddd;
+      display: flex;
+      justify-content: space-between;
+      font-size: 1rem;
+    }
+
+    .item-name {
+      color: #333;
+    }
+
+    .item-price {
+      color: #a0522d;
+      font-weight: bold;
+    }
+
+    footer {
+      text-align: center;
+      background-color: #f4a261;
+      color: white;
+      padding: 1rem;
+      margin-top: 3rem;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Sunrise Bakery Menu</h1>
+  </header>
+  <div class="menu">
+    <div class="category">
+      <div class="category-img">
+        <img src="./images/drycakes.png" alt="Dry Cakes">
+        <img src="./images/brownie.png" alt="Dry Cakes">
+        <img src="./images/redvelvet.png" alt="Dry Cakes">
+      </div>
+      <div class="item-list">
+        <h2>Dry Cakes</h2>
+        <ul>
+          <li><span class="item-name">Brownie</span><span class="item-price">₹80</span></li>
+          <li><span class="item-name">Choco Lava</span><span class="item-price">₹60</span></li>
+          <li><span class="item-name">Cream Bun</span><span class="item-price">₹30</span></li>
+          <li><span class="item-name">Dilpasand</span><span class="item-price">₹30</span></li>
+          <li><span class="item-name">Donut</span><span class="item-price">₹60</span></li>
+          <li><span class="item-name">Apple Pie</span><span class="item-price">₹80</span></li>
+          <li><span class="item-name">Dates Pie</span><span class="item-price">₹80</span></li>
+          <li><span class="item-name">Choco Fudge</span><span class="item-price">₹80</span></li>
+          <li><span class="item-name">Milk Cake</span><span class="item-price">₹50</span></li>
+          <li><span class="item-name">Carrot Cake</span><span class="item-price">₹60</span></li>
+          <li><span class="item-name">Almond Cake</span><span class="item-price">₹80</span></li>
+          <li><span class="item-name">Banana Walnut</span><span class="item-price">₹70</span></li>
+          <li><span class="item-name">Fruit Muffin</span><span class="item-price">₹40</span></li>
+          <li><span class="item-name">Chocolate Muffin</span><span class="item-price">₹50</span></li>
+          <li><span class="item-name">Redvelvet Muffin</span><span class="item-price">₹60</span></li>
+          <li><span class="item-name">Caramel Slice</span><span class="item-price">₹30</span></li>
+          <li><span class="item-name">Plum Cake</span><span class="item-price">₹100</span></li>
+          <li><span class="item-name">Honey Boat</span><span class="item-price">₹100</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Side Bites -->
+    <div class="category">
+      <div class="item-list">
+        <h2>Side Bites</h2>
+        <ul>
+          <li><span class="item-name">Cheese Pops</span><span class="item-price">₹99</span></li>
+          <li><span class="item-name">Veg Smilies</span><span class="item-price">₹99</span></li>
+          <li><span class="item-name">Veg Nuggets</span><span class="item-price">₹99</span></li>
+          <li><span class="item-name">Chicken Nuggets</span><span class="item-price">₹129</span></li>
+          <li><span class="item-name">French Fries</span><span class="item-price">₹100</span></li>
+          <li><span class="item-name">Peri Peri French Fries</span><span class="item-price">₹120</span></li>
+        </ul>
+      </div>
+      <div class="category-img">
+        <img src="./images/frenchfries.png" alt="Side Bites">
+      </div>
+
+    </div>
+
+    <!-- Ice Creams -->
+    <div class="category">
+      <div class="category-img">
+        <img src="./images/icecreams.png" alt="Ice Creams">
+      </div>
+      <div class="item-list">
+        <h2>Ice Creams</h2>
+        <ul>
+          <li><span class="item-name">Butterscotch</span><span class="item-price">₹99</span></li>
+          <li><span class="item-name">Vanila</span><span class="item-price">₹99</span></li>
+          <li><span class="item-name">Strawberry</span><span class="item-price">₹99</span></li>
+          <li><span class="item-name">American Dry Fruit</span><span class="item-price">₹129</span></li>
+          <li><span class="item-name">Caramel Nuts</span><span class="item-price">₹100</span></li>
+          <li><span class="item-name">Chocolate</span><span class="item-price">₹120</span></li>
+          <li><span class="item-name">Mango</span><span class="item-price">₹120</span></li>
+          <li><span class="item-name">Brownie with icecream</span><span class="item-price">₹120</span></li>
+          <li><span class="item-name">Sezzeling Brownie</span><span class="item-price">₹120</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="category">
+      <div class="item-list">
+        <h2>Mocktails</h2>
+        <ul>
+          <li><span class="item-name">Virgin Mojito</span><span class="item-price">₹99</span></li>
+          <li><span class="item-name">Blue Ocean</span><span class="item-price">₹99</span></li>
+          <li><span class="item-name">Passion Fruit Punch</span><span class="item-price">₹99</span></li>
+          <li><span class="item-name">Fresh Lime Soda (sweet and salt)</span><span class="item-price">₹99</span></li>
+          <li><span class="item-name">Litchi</span><span class="item-price">₹99</span></li>
+          <li><span class="item-name">Kiwi</span><span class="item-price">₹99</span></li>
+          <li><span class="item-name">Watermelon Splash</span><span class="item-price">₹99</span></li>
+          <li><span class="item-name">Green Apple</span><span class="item-price">₹99</span></li>
+        </ul>
+      </div>
+      <div class="category-img">
+        <img src="./images/moktails-removebg-preview.png" alt="Mocktails">
+      </div>
+
+    </div>
+    <div class="category">
+      <div class="category-img">
+        <img src="./images/milkshakes-removebg-preview.png" alt="Ice Creams">
+      </div>
+      <div class="item-list">
+        <h2>Milkshakes</h2>
+        <ul>
+          <li><span class="item-name">Vanila Dream</span><span class="item-price">₹119</span></li>
+          <li><span class="item-name">Pistachio</span><span class="item-price">₹119</span></li>
+          <li><span class="item-name">Strawberry Delight</span><span class="item-price">₹119</span></li>
+          <li><span class="item-name">Kitkat Milkshake</span><span class="item-price">₹119</span></li>
+          <li><span class="item-name">Blueberry</span><span class="item-price">₹119</span></li>
+          <li><span class="item-name">Chocolate Milkshake</span><span class="item-price">₹119</span></li>
+          <li><span class="item-name">Mango</span><span class="item-price">₹119</span></li>
+          <li><span class="item-name">Brownie Milkshake</span><span class="item-price">₹119</span></li>
+          <li><span class="item-name">Oreo Milkshake</span><span class="item-price">₹119</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="category">
+      <div class="item-list">
+        <h2>Desert</h2>
+        <ul>
+          <li><span class="item-name">Apricot Delight</span><span class="item-price">₹99</span></li>
+          <li><span class="item-name">Opera</span><span class="item-price">₹99</span></li>
+          <li><span class="item-name">Passion Fruit </span><span class="item-price">₹99</span></li>
+        </ul>
+      </div>
+      <div class="category-img">
+        <img src="./images/frenchfries.png" alt="Side Bites">
+      </div>
+
+    </div>
+    <div class="category">
+      <div class="category-img">
+        <img src="./images/juices-removebg-preview.png" alt="Ice Creams">
+      </div>
+      <div class="item-list">
+        <h2>Beverages</h2>
+        <ul>
+          <li><span class="item-name">Soft Drink</span></li>
+          <li><span class="item-name">Water Bottle</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="category">
+      <div class="item-list">
+        <h2>Puffs</h2>
+        <ul>
+          <li><span class="item-name">Veg Puff</span><span class="item-price">₹20</span></li>
+          <li><span class="item-name">Egg Puff</span><span class="item-price">₹30</span></li>
+          <li><span class="item-name">Chicken Puff</span><span class="item-price">₹40</span></li>
+          <li><span class="item-name">Veg Roll</span><span class="item-price">₹25</span></li>
+          <li><span class="item-name">Capsicum Roll</span><span class="item-price">₹30</span></li>
+          <li><span class="item-name">Panner Roll</span><span class="item-price">₹35</span></li>
+          <li><span class="item-name">Chicken Roll</span><span class="item-price">₹45</span></li>
+          <li><span class="item-name">Chicken 65 Roll</span><span class="item-price">₹45</span></li>
+        </ul>
+      </div>
+      <div class="category-img">
+        <img src="./images/puffs-removebg-preview.png" alt="Side Bites">
+      </div>
+
+    </div>
+    <div class="category">
+      <div class="category-img">
+        <img src="./images/burgers-removebg-preview.png" alt="Ice Creams">
+      </div>
+      <div class="item-list">
+        <h2>Burgers</h2>
+        <ul>
+          <li><span class="item-name">Veg Burger</span><span class="item-price">₹99</span></li>
+          <li><span class="item-name">Veg Double Patty Burger</span><span class="item-price">₹129</span></li>
+          <li><span class="item-name">Veg Cheese Over Loaded Burger</span><span class="item-price">₹149</span></li>
+          <li><span class="item-name">Chicken Burger</span><span class="item-price">₹119</span></li>
+          <li><span class="item-name">Chicken Cheese Burger</span><span class="item-price">₹129</span></li>
+          <li><span class="item-name">Chicken Double Patty Burger</span><span class="item-price">₹149</span></li>
+
+        </ul>
+      </div>
+    </div>
+    <div class="category">
+      <div class="item-list">
+        <h2>Pizzas</h2>
+        <ul>
+          <li><span class="item-name">Veg Pizza</span><span class="item-price">₹149</span></li>
+          <li><span class="item-name">Corn Pizza</span><span class="item-price">₹149</span></li>
+          <li><span class="item-name">Mushroom Pizza</span><span class="item-price">₹149</span></li>
+          <li><span class="item-name">Paneer Pizza</span><span class="item-price">₹149</span></li>
+          <li><span class="item-name">Cheese Pizza</span><span class="item-price">₹149</span></li>
+          <li><span class="item-name">Onion Pizza</span><span class="item-price">₹149</span></li>
+          <li><span class="item-name">Mixed Veg Pizza</span><span class="item-price">₹149</span></li>
+          <li><span class="item-name">Chicken Pizza</span><span class="item-price">₹169</span></li>
+          <li><span class="item-name">Chicken Tikka Pizza</span><span class="item-price">₹169</span></li>
+          <li><span class="item-name">Chicken Overloaded Pizza</span><span class="item-price">₹169</span></li>
+          <li><span class="item-name">Seven Days Special Pizza</span><span class="item-price">₹169</span></li>
+        </ul>
+      </div>
+      <div class="category-img">
+        <img src="./images/pizzas-removebg-preview.png" alt="Side Bites">
+      </div>
+
+    </div>
+    <div class="category">
+      <div class="category-img">
+        <img src="./images/sandwich-removebg-preview.png" alt="Ice Creams">
+      </div>
+      <div class="item-list">
+        <h2>Sandwich</h2>
+        <ul>
+          <li><span class="item-name">Veg Sandwich</span><span class="item-price">₹129</span></li>
+          <li><span class="item-name">Veg Grilled Sandwich</span><span class="item-price">₹129</span></li>
+          <li><span class="item-name">Corn Sandwich</span><span class="item-price">₹129</span></li>
+          <li><span class="item-name">Mushroom Sandwich</span><span class="item-price">₹129</span></li>
+          <li><span class="item-name">Cheese Sandwich</span><span class="item-price">₹129</span></li>
+          <li><span class="item-name">Paneer Sandwich</span><span class="item-price">₹129</span></li>
+          <li><span class="item-name">Mixed Veg Sandwich</span><span class="item-price">₹129</span></li>
+          <li><span class="item-name">Egg Sandwich</span><span class="item-price">₹149</span></li>
+          <li><span class="item-name">Chicken Sandwich</span><span class="item-price">₹159</span></li>
+          <li><span class="item-name">Chicken Cheese Sandwich</span><span class="item-price">₹159</span></li>
+          <li><span class="item-name">Chicken Grilled Sandwich</span><span class="item-price">₹159</span></li>
+          <li><span class="item-name">Chicken Tikka Sandwich</span><span class="item-price">₹159</span></li>
+          <li><span class="item-name">Seven Days Special Sandwich</span><span class="item-price">₹159</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="category">
+      <div class="item-list">
+        <h2>Pastries</h2>
+        <ul>
+          <li><span class="item-name">Butterscotch</span><span class="item-price">₹70</span></li>
+          <li><span class="item-name">Pineapple</span><span class="item-price">₹70</span></li>
+          <li><span class="item-name">Black Forest</span><span class="item-price">₹70</span></li>
+          <li><span class="item-name">Fruit & Nut</span><span class="item-price">₹80</span></li>
+          <li><span class="item-name">White Forest</span><span class="item-price">₹80</span></li>
+          <li><span class="item-name">Honey Almond</span><span class="item-price">₹80</span></li>
+          <li><span class="item-name">Milk Badam</span><span class="item-price">₹80</span></li>
+          <li><span class="item-name">Choco Almond</span><span class="item-price">₹80</span></li>
+          <li><span class="item-name">Choco Chips</span><span class="item-price">₹100</span></li>
+          <li><span class="item-name">Oreo</span><span class="item-price">₹100</span></li>
+          <li><span class="item-name">Red Velvet</span><span class="item-price">₹120</span></li>
+          <li><span class="item-name">Rainbow</span><span class="item-price">₹100</span></li>
+        </ul>
+      </div>
+      <div class="category-img">
+        <img src="./images/pasteries-removebg-preview.png" alt="Side Bites">
+      </div>
+
+    </div>
+    <div class="category">
+      <div class="category-img">
+        <img src="./images/breads-removebg-preview.png" alt="Ice Creams">
+      </div>
+      <div class="item-list">
+        <h2>Breads</h2>
+        <ul>
+          <li><span class="item-name">Plain Garlic Bread</span><span class="item-price">₹89</span></li>
+          <li><span class="item-name">Cheese Garlic Bread</span><span class="item-price">₹99</span></li>
+          <li><span class="item-name">Stuffed Garlic Bread</span><span class="item-price">₹119</span></li>
+        </ul>
+      </div>
+    </div>
+    <!-- You can keep adding more categories like this -->
+    <!-- Combos Section -->
+    <div class="category">
+      <div class="item-list">
+        <h2>Combos</h2>
+        <ul>
+          <li><span class="item-name">Veg Pizza + French Fries + Soft Drink</span><span class="item-price">₹179</span>
+          </li>
+          <li><span class="item-name">Mixed Veg Pizza + French Fries + Soft Drink</span><span
+              class="item-price">₹179</span></li>
+          <li><span class="item-name">Paneer Pizza + French Fries + Soft Drink</span><span
+              class="item-price">₹179</span></li>
+          <li><span class="item-name">Chicken Pizza + French Fries + Soft Drink</span><span
+              class="item-price">₹199</span></li>
+          <li><span class="item-name">Chicken Tikka Pizza + French Fries + Soft Drink</span><span
+              class="item-price">₹199</span></li>
+          <li><span class="item-name">Veg Burger + French Fries + Soft Drink</span><span class="item-price">₹179</span>
+          </li>
+          <li><span class="item-name">Chicken Burger + French Fries + Soft Drink</span><span
+              class="item-price">₹199</span></li>
+          <li><span class="item-name">Chicken Cheese Burger + French Fries + Soft Drink</span><span
+              class="item-price">₹199</span></li>
+          <li><span class="item-name">Veg Sandwich + French Fries + Soft Drink</span><span
+              class="item-price">₹179</span></li>
+          <li><span class="item-name">Mixed Veg Sandwich + French Fries + Soft Drink</span><span
+              class="item-price">₹179</span></li>
+          <li><span class="item-name">Chicken Sandwich + French Fries + Soft Drink</span><span
+              class="item-price">₹199</span></li>
+          <li><span class="item-name">Chicken Cheese Sandwich + French Fries + Soft Drink</span><span
+              class="item-price">₹199</span></li>
+        </ul>
+      </div>
+      <div class="category-img">
+        <img src="./images/combo1.png" alt="Ice Creams">
+        <img src="./images/combo12.png" alt="Ice Creams">
+        <img src="./images/combo13.jpg" alt="Ice Creams">
+      </div>
+    </div>
+    <!-- Dual Combos Section -->
+    <div class="category">
+      <div class="category-img">
+        <img src="./images/combo2.png" alt="Ice Creams">
+      </div>
+      <div class="item-list">
+        <h2>Dual Combos</h2>
+        <ul>
+          <li><span class="item-name">Veg Pizza + Mixed Veg Burger + French Fries + 2 Soft Drinks</span><span
+              class="item-price">₹299</span></li>
+          <li><span class="item-name">Paneer Pizza + Veg Burger + French Fries + 2 Soft Drinks</span><span
+              class="item-price">₹299</span></li>
+          <li><span class="item-name">Chicken Pizza + Chicken Burger + French Fries + 2 Soft Drinks</span><span
+              class="item-price">₹299</span></li>
+          <li><span class="item-name">Chicken Tikka Pizza + Chicken Burger + French Fries + 2 Soft Drinks</span><span
+              class="item-price">₹299</span></li>
+          <li><span class="item-name">2 Chicken Burgers + French Fries + 2 Soft Drinks</span><span
+              class="item-price">₹299</span></li>
+          <li><span class="item-name">Chicken Cheese Burger + Chicken Pizza + French Fries + 2 Soft Drinks</span><span
+              class="item-price">₹299</span></li>
+          <li><span class="item-name">2 Veg Sandwiches + French Fries + 2 Soft Drinks</span><span
+              class="item-price">₹299</span></li>
+          <li><span class="item-name">2 Chicken Sandwiches + French Fries + 2 Soft Drinks</span><span
+              class="item-price">₹299</span></li>
+          <li><span class="item-name">2 Chicken Cheese Sandwiches + French Fries + 2 Soft Drinks</span><span
+              class="item-price">₹299</span></li>
+        </ul>
+      </div>
+    </div>
+    <!-- Family Combos Section -->
+    <div class="category">
+
+      <div class="item-list">
+        <h2>Family Combos</h2>
+        <ul>
+          <li><span class="item-name">Any 3 (Burger/Pizza/Sandwich) + 2 French Fries + 600ml Soft Drink</span><span
+              class="item-price">₹399</span></li>
+          <li><span class="item-name">Any 4 (Burger/Pizza/Sandwich) + 2 French Fries + 600ml Soft Drink</span><span
+              class="item-price">₹499</span></li>
+        </ul>
+      </div>
+      <div class="category-img">
+        <img src="./images/combo3.png" alt="Ice Creams">
+      </div>
+    </div>
+  </div>
+  <!-- Dry Cakes -->
+
+
+  <footer>
+    © 2025 Sunrise Bakery. All rights reserved.
+  </footer>
+
+</body>
+
+</html>
