@@ -33,7 +33,7 @@
 
     h2 {
       color: white;
-      margin-bottom: 1rem;
+      margin-bottom: 20px;
     }
 
     .category {
@@ -42,22 +42,36 @@
       gap: 20px;
       max-width: 1000px;
       margin: 30px auto;
+      flex-direction : column;
       width : 80%;
       padding: 20px;
       background-color: rgb(76, 44, 31);
       border-radius: 10px;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     }
-
+    .category-container{
+      display: flex;
+      align-items : center;
+      gap:20px;
+      justify-content : space-between
+    }
     .category-img {
       display: flex;
       flex-direction: column;
       gap: 20px;
       justify-content: space-between;
-      margin-top: 50px;
+      /* margin-top: 50px; */
       /* width: 30%; */
     }
-
+    .category-img1 {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      justify-content: space-between;
+      margin-top: 50px;
+      height : 100vh
+      /* width: 30%; */
+    }
     .category img {
       width: 150px;
       height: auto;
@@ -107,17 +121,19 @@
 <body>
 
   <header>
-    <img src="./images/logo (3).png" padding=10px width=300px alt="Dry Cakes">
+    <img src="./images/logo (3).png" padding=10px; width=300px; alt="Dry Cakes">
   </header>
   <div class="menu">
     <div class="category">
+    <h2>Dry Cakes</h2>
+    <div class="category-container">
       <div class="category-img">
         <!--<img src="./images/drycakes.png" alt="Dry Cakes">-->
         <img src="./images/brownie.png" alt="Dry Cakes">
         <img src="./images/redvelvet.png" alt="Dry Cakes">
       </div>
       <div class="item-list">
-        <h2>Dry Cakes</h2>
+        
         <ul>
           <li><span class="item-name">Brownie</span><span class="item-price">₹80</span></li>
           <li><span class="item-name">Choco Lava</span><span class="item-price">₹100</span></li>
@@ -140,11 +156,14 @@
         </ul>
       </div>
     </div>
+    </div>
 
     <!-- Side Bites -->
     <div class="category">
+      <h2>Side Bites</h2>
+    <div class="category-container">
       <div class="item-list">
-        <h2>Side Bites</h2>
+        
         <ul>
           <li><span class="item-name">Cheese Pops</span><span class="item-price">₹99</span></li>
           <li><span class="item-name">Veg Smilies</span><span class="item-price">₹99</span></li>
@@ -157,16 +176,18 @@
       <div class="category-img">
         <img src="./images/frenchfries.png" alt="Side Bites">
       </div>
-
+    </div>
     </div>
 
     <!-- Ice Creams -->
     <div class="category">
+      <h2>Ice Creams</h2>
+
+    <div class="category-container">
       <div class="category-img">
         <img src="./images/icecreams.png" alt="Ice Creams">
       </div>
       <div class="item-list">
-        <h2>Ice Creams</h2>
         <ul>
           <li><span class="item-name">Butterscotch</span><span class="item-price">₹99</span></li>
           <li><span class="item-name">Vanila</span><span class="item-price">₹99</span></li>
@@ -180,9 +201,12 @@
         </ul>
       </div>
     </div>
+    </div>
     <div class="category">
+      <h2>Mocktails</h2>
+
+    <div class="category-container">
       <div class="item-list">
-        <h2>Mocktails</h2>
         <ul>
           <li><span class="item-name">Virgin Mojito</span><span class="item-price">₹99</span></li>
           <li><span class="item-name">Blue Ocean</span><span class="item-price">₹99</span></li>
@@ -197,14 +221,16 @@
       <div class="category-img">
         <img src="./images/moktails-removebg-preview.png" alt="Mocktails">
       </div>
-
+    </div>
     </div>
     <div class="category">
+      <h2>Milkshakes</h2>
+
+    <div class="category-container">
       <div class="category-img">
         <img src="./images/milkshakes-removebg-preview.png" alt="Ice Creams">
       </div>
       <div class="item-list">
-        <h2>Milkshakes</h2>
         <ul>
           <li><span class="item-name">Vanila Dream</span><span class="item-price">₹119</span></li>
           <li><span class="item-name">Pistachio</span><span class="item-price">₹119</span></li>
@@ -217,6 +243,7 @@
           <li><span class="item-name">Oreo Milkshake</span><span class="item-price">₹119</span></li>
         </ul>
       </div>
+    </div>
     </div>
     <!--<div class="category">
       <div class="item-list">
@@ -233,18 +260,22 @@
 
     </div> -->
     <div class="category">
+      <h2>Beverages</h2>
+    <div class="category-container">
       <div class="category-img">
         <img src="./images/juices-removebg-preview.png" alt="Ice Creams">
       </div>
       <div class="item-list">
-        <h2>Beverages</h2>
         <ul>
           <li><span class="item-name">Soft Drink</span></li>
           <li><span class="item-name">Water Bottle</span></li>
         </ul>
       </div>
     </div>
+    </div>
     <div class="category">
+      <h2>Milkshakes</h2>
+      <div class="category-container">
       <div class="item-list">
         <h2>Puffs</h2>
         <ul>
@@ -263,14 +294,16 @@
       <div class="category-img">
         <img src="./images/puffs-removebg-preview.png" alt="Side Bites">
       </div>
-
+    </div>
     </div>
     <div class="category">
+      <h2>Burgers</h2>
+
+    <div class="category-container">
       <div class="category-img">
         <img src="./images/burgers-removebg-preview.png" alt="Ice Creams">
       </div>
       <div class="item-list">
-        <h2>Burgers</h2>
         <ul>
           <li><span class="item-name">Veg Burger</span><span class="item-price">₹99</span></li>
           <li><span class="item-name">Veg Double Patty Burger</span><span class="item-price">₹129</span></li>
@@ -282,9 +315,12 @@
         </ul>
       </div>
     </div>
+    </div>
     <div class="category">
+      <h2>Pizzas</h2>
+
+    <div class="category-container">
       <div class="item-list">
-        <h2>Pizzas</h2>
         <ul>
           <li><span class="item-name">Veg Pizza</span><span class="item-price">₹149</span></li>
           <li><span class="item-name">Corn Pizza</span><span class="item-price">₹149</span></li>
@@ -302,14 +338,16 @@
       <div class="category-img">
         <img src="./images/pizzas-removebg-preview.png" alt="Side Bites">
       </div>
-
+    </div>
     </div>
     <div class="category">
+      <h2>Sandwich</h2>
+
+    <div class="category-container">
       <div class="category-img">
         <img src="./images/sandwich-removebg-preview.png" alt="Ice Creams">
       </div>
       <div class="item-list">
-        <h2>Sandwich</h2>
         <ul>
           <li><span class="item-name">Veg Sandwich</span><span class="item-price">₹129</span></li>
           <li><span class="item-name">Veg Grilled Sandwich</span><span class="item-price">₹129</span></li>
@@ -327,9 +365,12 @@
         </ul>
       </div>
     </div>
+    </div>
     <div class="category">
+      <h2>Pastries</h2>
+
+    <div class="category-container">
       <div class="item-list">
-        <h2>Pastries</h2>
         <ul>
           <li><span class="item-name">Butterscotch</span><span class="item-price">₹70</span></li>
           <li><span class="item-name">Pineapple</span><span class="item-price">₹70</span></li>
@@ -354,7 +395,7 @@
       <div class="category-img">
         <img src="./images/pasteries-removebg-preview.png" alt="Side Bites">
       </div>
-
+    </div>
     </div>
     <!--{% comment %} <div class="category">
       <div class="category-img">
@@ -373,8 +414,25 @@
     <!-- You can keep adding more categories like this -->
     <!-- Combos Section -->
     <div class="category">
+      <h2>Frost & Fizz Mellow Magic Combo </h2>
+    <div class="category-container">
+      <div class="category-img">
+        <img src="./images/pastrycombo.png" alt="Side Bites">
+      </div>
       <div class="item-list">
-        <h2>Combos</h2>
+        <ul>
+          <li><span class="item-name">1 Mocktail with 1 Pastry</span><span class="item-price">₹159</span></li>
+          <li><span class="item-name">1 Mocktail with 1 Pastry</span><span class="item-price">₹169</span></li>
+          <li><span class="item-name">1 Mocktail with 1 Pastry</span><span class="item-price">₹179</span></li>
+          
+        </ul>
+      </div>
+    </div>
+    </div>
+    <div class="category">
+      <h2>Combos</h2>
+    <div class="category-container">
+      <div class="item-list">
         <ul>
           <li><span class="item-name">Veg Pizza + French Fries + Soft Drink</span><span class="item-price">₹179</span>
           </li>
@@ -402,19 +460,23 @@
               class="item-price">₹199</span></li>
         </ul>
       </div>
-      <div class="category-img">
+      <div class="category-img1">
         <img src="./images/combo1.png" alt="Ice Creams">
         <img src="./images/combo12.png" alt="Ice Creams">
         <img src="./images/combo13.jpg" alt="Ice Creams">
       </div>
     </div>
+    </div>
     <!-- Dual Combos Section -->
     <div class="category">
-      <div class="category-img">
+      <h2>Dual Combos</h2>
+      <div class="category-container">
+      <div class="category-img1">
         <img src="./images/combo2.png" alt="Ice Creams">
+        <img src="./images/dualcombo3.jpeg" alt="Ice Creams">
+        <img src="./images/dualcombo2.png" alt="Ice Creams">
       </div>
       <div class="item-list">
-        <h2>Dual Combos</h2>
         <ul>
           <li><span class="item-name">Veg Pizza + Mixed Veg Burger + French Fries + 2 Soft Drinks</span><span
               class="item-price">₹299</span></li>
@@ -436,12 +498,13 @@
               class="item-price">₹299</span></li>
         </ul>
       </div>
+      </div>
     </div>
     <!-- Family Combos Section -->
     <div class="category">
-
+      <h2>Family Combos</h2>
+    <div class="category-container">
       <div class="item-list">
-        <h2>Family Combos</h2>
         <ul>
           <li><span class="item-name">Any 3 (Burger/Pizza/Sandwich) + 2 French Fries + 600ml Soft Drink</span><span
               class="item-price">₹399</span></li>
@@ -453,6 +516,7 @@
         <img src="./images/combo3.png" alt="Ice Creams">
       </div>
     </div>
+  </div>
   </div>
   <!-- Dry Cakes -->
 
